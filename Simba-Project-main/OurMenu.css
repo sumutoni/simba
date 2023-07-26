@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #e85e04;;
+  }
+  
+  .gallery-title {
+    font-size: 18px;
+    font-family: 'Lato';
+    color: #fff;
+  }
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #de9c39;
+    color: #fff;
+    border-bottom: 4px solid #523406;
+    
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap:30px;
+    size: 5px;
+  }
+ 
+  .item img {
+    width: 40%;
+    max-width: 350px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-right: 10px;
+    cursor: pointer; 
+    transition: 0.2s ease; 
+  } 
+.item img:hover{
+  transform: scale(0.7);
+}
+
+
