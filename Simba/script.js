@@ -10,16 +10,18 @@
 //       }
 //     });
 //   });
-const elmt= document.getElementsByTagName('checkbox');
-console.log(elmt);
-if (elmt){
-  elmt.addEventListener('click', function (){
-    alert('You clicked a button');
-  });
-}
+const elmt= document.querySelector('.checked');
+elmt.addEventListener('click', function () {
+  const to_change =document.querySelector('#status');
+ if (elmt.checked){
+    to_change.textContent= 'Read';
+    to_change.style.color="#00b33c";
+
+  }
+  else{
+    to_change.textContent= 'Unread';
+    to_change.style.color="#ff0000";
+  }
+});
   
-  // if (elmt.checked){
-  //   to_change.textContent= 'Read';
-  //   to_change.style.backgroundColor="#00b33c";
-  //   to_change.style.color="white";
-  // }
+  
